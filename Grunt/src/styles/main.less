@@ -1,0 +1,88 @@
+@fontePrincipal: Roboto, system-ui;
+@fonteDoTitulo: "Playwrite DE Grund", cursive;
+@corTexto: #856748;
+@corFundo: #ccd5ae;
+@corBotao: #d4a373;
+@letraBotao: #fff;
+
+body {
+    background-color: @corFundo;
+    font-family: @fontePrincipal;
+    color: @corTexto;
+}
+
+h1 {
+    font-family: @fonteDoTitulo;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size:1.5em;
+    text-align: center;
+}
+
+button {
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: @corBotao;
+    color: @letraBotao;
+    font-family: @fontePrincipal;
+    border: none;
+    &:hover {
+       background-color: #947250;
+    }
+}
+
+input { 
+    margin: 16px auto 0;
+    font-size: 0.8em;
+    max-width: 80px;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    color: @corTexto;
+    border-bottom: 1px solid #856748;
+}
+
+.result {
+    padding: 16px;
+    margin-top: 20px;
+    border: 8px dotted #fff;
+    display: none;
+    color: #fff;
+
+    span {
+        font-weight: bold;
+        font-size: 1em;
+        display: block;
+    }
+}
+
+form select {
+    background-color:#faedcd;
+    font-family: @fontePrincipal;
+    border-radius: 5px;
+    height: 25px;
+    max-width: 100px;
+    width: 100px;
+    margin: 16px auto 0;
+}
+
+.alert {
+    margin-top: 16px;
+    color: rgb(132, 14, 14);
+    font-size: 0.8em;
+    display: none;
+}
+
+
+
